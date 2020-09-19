@@ -1,0 +1,50 @@
+.wrap {
+    position: relative;
+    height: 100vh;
+    //    padding: 0px 1px 0px 1px;
+}
+
+.collection-cover-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.collection-cover-title {
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s linear;
+}
+
+.collection-cover-title > h3 {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    color: $collection_title_color;
+    text-align: center;
+    font-size: 4.0em;
+    font-weight: bold;
+    font-style: oblique;
+    font-variant: normal;
+}
+
+.dim-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    //    padding: 0px 1px 0px 1px;
+}
+
+.dim {
+    height: 100%;
+    width: 100%;
+    background-color: $collection_dim_color;
+    z-index: 2200;
+}

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Home
+---
+<div id="collections-slide">
+{% for post in site.posts %}
+    <div class="wrap">
+        <a href="{{ post.url }}">
+        <div style="background-image: url('{{ site.baseurl }}/assets/collections/{{ post.image }}');" class="collection-cover-image">
+            <div class="collection-cover-title">
+                <h3>{{ post.title }}</h3>
+            </div>
+        </div>
+        </a>
+        <div class="dim-wrap">
+            <div class="dim"></div>
+        </div>
+    </div>
+{% endfor %}
+
+</div>

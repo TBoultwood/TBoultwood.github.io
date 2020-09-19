@@ -1,0 +1,24 @@
+#collection-detail-slide {
+    background-color: $collection-detail-bg-color;
+}
+
+.image-detail-wrap {
+    positon: relative;
+    height: calc(100vh - 50px);
+    width: 100vw;
+}
+
+.full-image {
+    max-width: 800px;
+    max-height: 800px;
+    position: relative;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

@@ -1,0 +1,20 @@
+body, html {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.slick-next:before {
+    margin-left: -80px;
+    z-index: 1200;
+}
+.slick-prev {
+    margin-left: 40px;
+    z-index: 1200;
+}
+
+

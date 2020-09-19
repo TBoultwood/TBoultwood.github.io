@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div id="collection-detail-slide">
+{% for item in page.items %}
+    <div class="image-detail-wrap">
+  <img src="{{ site.baseurl }}/assets/collections/{{ item.image }}"
+   alt="{{ item.name }}"
+       class="full-image">
+    </div>
+{% endfor %}
+</div>
