@@ -1,6 +1,6 @@
 ---
 layout: collection
-image: /plants/cover.jpg
+image: /plants/plants2.jpg
 title: Pflanzen
 author:
 items:

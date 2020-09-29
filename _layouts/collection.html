@@ -1,12 +1,21 @@
 ---
 layout: default
 ---
-<div id="collection-detail-slide">
-{% for item in page.items %}
-    <div class="image-detail-wrap">
-  <img src="{{ site.baseurl }}/assets/collections/{{ item.image }}"
-   alt="{{ item.name }}"
-       class="full-image">
+<div class="swiper-container detail-img-view">
+    <div class="swiper-wrapper">
+        {% for item in page.items %}
+        <div class="swiper-slide swiper-detail-slide"
+             style="background-image:url('{{ site.baseurl }}/assets/collections/{{ item.image }}')">
+        </div>
+        {% endfor %}
     </div>
-{% endfor %}
+</div>
+<div class="swiper-container detail-thumbs-view", style="height: 20%;">
+    <div class="swiper-wrapper">
+        {% for item in page.items %}
+        <div class="swiper-slide swiper-detail-thumb-slide"
+             style="background-image:url('{{ site.baseurl }}/assets/collections/{{ item.image }}');">
+        </div>
+        {% endfor %}
+    </div>
 </div>
