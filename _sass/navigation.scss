@@ -1,5 +1,12 @@
 .navbar {
     background-color: $navbar_bg_color;
+    font-family: $font;
+    font-weight: normal;
+}
+
+.navbar-brand {
+    font-family: $font;
+    font-weight: bold;
 }
 
 .navbar-light .navbar-brand:link,
