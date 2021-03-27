@@ -9,6 +9,10 @@
     font-weight: bold;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
 .navbar-light .navbar-brand:link,
 .navbar-light .navbar-brand:hover {
     color: $navbar_title_color;
