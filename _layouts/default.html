@@ -9,17 +9,13 @@
     <script src="/assets/js/swiper-bundle.js"></script>
     <script type="text/javascript">
      var swiper = new Swiper('.main-gallery', {
-         slidesPerView: 'auto',
-         spaceBetween: 0,
-         init: false,
+         spaceBetween: 10,
          centeredSlides: true,
+         init: false,
          loop: true,
          breakpoints: {
              '@1.00': {
-                 slidesPerView: {% if site.posts >=3 %} {{ site.posts }} {% else %} {{ 2 }} {% endif %},
-             },
-             '@0.75': {
-                 slidesPerView: 2,
+                 slidesPerView: 'auto',
              },
              '@0.50': {
                  slidesPerView: 1,

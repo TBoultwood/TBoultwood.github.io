@@ -1,8 +1,8 @@
 ---
 layout: collection
-image: /plants/cover.jpg
-width: 60%
-title: Pflanzen
+image: /plants/plants3.jpg
+width: 40%
+title: Pflanzen 3
 author:
 items:
   - name: img01

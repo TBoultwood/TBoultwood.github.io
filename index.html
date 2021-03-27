@@ -2,12 +2,12 @@
 layout: default
 title: Home
 ---
-<div class="swiper-container main-gallery">
+<div class="main-gallery">
     <div class="swiper-wrapper">
 {% for post in site.posts %}
-    <div class="swiper-slide">
+    <div class="swiper-slide" style="width: {{post.width}};">
         <a href="{{ post.url }}">
-        <div style="background-image: url('{{ site.baseurl }}/assets/collections/{{ post.image }}');" class="collection-cover-image">
+        <div class="collection-cover-image" style="background-image: url('{{ site.baseurl }}/assets/collections/{{ post.image }}');">
             <div class="collection-cover-title">
                 <h3>{{ post.title }}</h3>
             </div>
