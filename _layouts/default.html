@@ -9,6 +9,7 @@
     <script src="/assets/js/swiper-bundle.js"></script>
     <script type="text/javascript">
      var swiper = new Swiper('.main-gallery', {
+         slidesPerView: 'auto',
          spaceBetween: 0,
          init: false,
          centeredSlides: true,
@@ -49,25 +50,10 @@
      swiper.init();
     </script>
     <script type="text/javascript">
-     var detailThumbs = new Swiper('.detail-thumbs-view', {
-         spaceBetween: 10,
-         slidesPerView: 4,
-         freeMode: true,
-         loop: true,
-         watchSlidesVisibility: true,
-         watchSlidesProgress: true
-     });
      var detailGallery = new Swiper('.detail-img-view', {
          spaceBetween: 10,
          loop: true,
-         thumbs: {
-             swiper: detailThumbs
-         },
-         breakpoints: {
-             '@1.00': {
-                 slidesPerView: 1,
-             }
-         }
+         slidesPerView: 1
      });
     </script>
   </body>
